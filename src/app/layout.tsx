@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import Script from "next/script"
+import Script from "next/script";
 import "./globals.css";
+import Nevbar from "@/components/layout/Navbar";
+import { outfitFont, notoSansJpFont, adobeFonts } from "@styles/fonts";
 
 export const metadata: Metadata = {
   title: "OTDM– Landing Page Test",
@@ -14,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <head>
         <Script
           src="https://use.typekit.net/ldm8iso.js"
           strategy="beforeInteractive"
@@ -22,8 +24,10 @@ export default function RootLayout({
         <Script id="adobe-font">
           {`try{Typekit.load({ async: true });}catch(e){}`}
         </Script>
-
-        {children}
+      </head>
+      <body className={`${outfitFont.className}`}>
+          <Nevbar />
+          {children}
       </body>
     </html>
   );
