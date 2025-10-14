@@ -1,26 +1,35 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-yellow: #f2dc00;
+  --color-red: #b8181e;
+  --color-green-dark: #005d31;
+  --color-green: #468a59;
+  --color-green-light: #58ab6f;
+  --color-green-lighter: #7abc8c;
+  --color-brown-dark: #604c3f;
+  --color-brown: #b58741;
+  --color-brown-light: #c79f62;
+  --color-brown-lighter: #d4b688;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --color-custom-yellow: var(--color-yellow);
+  --color-custom-red: var(--color-red);
+  --color-custom-green-dark: var(--color-green-dark);
+  --color-custom-green: var(--color-green);
+  --color-custom-green-light: var(--color-green-light);
+  --color-custom-green-lighter: var(--color-green-lighter);
+  --color-custom-brown-dark: var(--color-brown-dark);
+  --color-custom-brown: var(--color-brown);
+  --color-custom-brown-light: var(--color-brown-light);
+  --color-custom-brown-lighter: var(--color-brown-lighter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.font-mizolet {
+  font-family: mizolet, sans-serif;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.font-yu-gothic {
+  font-family: yu-gothic-pr6n, sans-serif;
 }
