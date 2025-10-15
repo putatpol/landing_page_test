@@ -27,7 +27,7 @@ import Breadcrumbs from "./Breadcrumbs";
 // --- Constants ---
 const PAGES = ["商品検索", "ブランド", "レンズ", "OWNDAYSについて", "店舗検索"];
 const MENU_FONT = { fontFamily: "yu-gothic-pr6n, sans-serif", color: "black" };
-const point = 0
+const point = 0;
 
 // --- Sub Components ---
 function MobileMenu({
@@ -135,10 +135,18 @@ function UserSection() {
             onClick={() => console.log(title)}
             sx={{
               p: 1,
-              display: { xs: hideMobile ? "none" : "inline-flex", md: "inline-flex" },
+              display: {
+                xs: hideMobile ? "none" : "inline-flex",
+                md: "inline-flex",
+              },
             }}
           >
-            <Image src={icon} alt={`icon ${title.toLowerCase()}`} width={20} height={20} />
+            <Image
+              src={icon}
+              alt={`icon ${title.toLowerCase()}`}
+              width={20}
+              height={20}
+            />
           </IconButton>
         </Tooltip>
       ))}
@@ -148,21 +156,37 @@ function UserSection() {
 
 // --- Main Component ---
 export default function Navbar() {
-  const [anchorElNav, setAnchorElNav] = React.useState<HTMLElement | null>(null);
+  const [anchorElNav, setAnchorElNav] = React.useState<HTMLElement | null>(
+    null,
+  );
 
-  const handleOpenNavMenu = (e: React.MouseEvent<HTMLElement>) => setAnchorElNav(e.currentTarget);
+  const handleOpenNavMenu = (e: React.MouseEvent<HTMLElement>) =>
+    setAnchorElNav(e.currentTarget);
   const handleCloseNavMenu = () => setAnchorElNav(null);
 
   return (
-    <header className="sticky top-0">
+    <header className="sticky top-0 z-50">
       {/* Notice Bar */}
-      <Box sx={{ backgroundColor: "#666", textAlign: "center", color: "#fff", py: 1 }}>
+      <Box
+        sx={{
+          backgroundColor: "#666",
+          textAlign: "center",
+          color: "#fff",
+          py: 1,
+        }}
+      >
         <Typography>オンラインストア発送遅延のおしらせ</Typography>
       </Box>
 
       {/* Navigation */}
-      <AppBar position="static" sx={{ backgroundColor: "white", boxShadow: "none"}}>
-        <Container maxWidth={false} sx={{ borderBottom: 1, borderColor: "#E3E3E3" }}>
+      <AppBar
+        position="static"
+        sx={{ backgroundColor: "white", boxShadow: "none" }}
+      >
+        <Container
+          maxWidth={false}
+          sx={{ borderBottom: 1, borderColor: "#E3E3E3" }}
+        >
           <Toolbar
             disableGutters
             sx={{ justifyContent: { xs: "space-between", md: "center" } }}

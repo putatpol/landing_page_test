@@ -1,15 +1,14 @@
-import { Outfit, Noto_Sans_JP } from 'next/font/google'
-import localFont from 'next/font/local' 
- 
+import { Outfit, Noto_Sans_JP } from "next/font/google";
+import localFont from "next/font/local";
 
 // Google Fonts
 export const outfitFont = Outfit({
-  variable: "--font-outfit"
+  variable: "--font-outfit",
 });
 
 // Class Css Fonts
 export const notoSansJpFont = Noto_Sans_JP({
-  variable: "--font-notosansjp"
+  variable: "--font-notosansjp",
 });
 
 export const adobeFonts = {
@@ -27,5 +26,5 @@ export const adobeFonts = {
 //   src: "../../public/fonts/NotoSansJP-VariableFont_wght.ttf",
 //   variable: "--font-notosansjp",
 // })
- 
+
 // export { outfit, notoSansJp, outfitFont, notoSansJpFont }

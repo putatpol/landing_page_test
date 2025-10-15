@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
 import Nevbar from "@/components/layout/Navbar";
-import { outfitFont, notoSansJpFont, adobeFonts } from "@styles/fonts";
+import { outfitFont } from "@styles/fonts";
 
 export const metadata: Metadata = {
   title: "OTDM– Landing Page Test",
@@ -26,8 +26,8 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={`${outfitFont.className}`}>
-          <Nevbar />
-          {children}
+        <Nevbar />
+        {children}
       </body>
     </html>
   );
