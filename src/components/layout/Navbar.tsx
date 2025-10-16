@@ -17,11 +17,7 @@ import {
 } from "@mui/material";
 import Image from "next/image";
 import Logo from "@images/logo-owndays.svg";
-import IconSearch from "@icons/icon-search.svg";
-import IconHeart from "@icons/icon-heart.svg";
-import IconCart from "@icons/icon-cart.svg";
-import IconPhone from "@icons/icon-phone.svg";
-import IconMenu from "@icons/icon-menu.svg";
+import Icon from "@icons/index";
 import Breadcrumbs from "./Breadcrumbs";
 
 // --- Constants ---
@@ -44,7 +40,7 @@ function MobileMenu({
   return (
     <Box sx={{ display: { xs: "flex", md: "none" }, order: { xs: 4 } }}>
       <IconButton onClick={() => console.log("Phone")} sx={{ p: 1 }}>
-        <Image src={IconPhone} alt="icon phone" />
+        <Image src={Icon.IconPhone} alt="icon phone" />
       </IconButton>
       <IconButton
         aria-controls="menu-appbar"
@@ -52,7 +48,7 @@ function MobileMenu({
         onClick={onOpen}
         color="inherit"
       >
-        <Image src={IconMenu} alt="icon menu" />
+        <Image src={Icon.IconMenu} alt="icon menu" />
       </IconButton>
 
       <Menu
@@ -126,9 +122,9 @@ function UserSection() {
       </Tooltip>
 
       {[
-        { title: "Search", icon: IconSearch },
-        { title: "Whishlist", icon: IconHeart, hideMobile: true },
-        { title: "Cart", icon: IconCart },
+        { title: "Search", icon: Icon.IconSearch },
+        { title: "Whishlist", icon: Icon.IconHeart, hideMobile: true },
+        { title: "Cart", icon: Icon.IconCart },
       ].map(({ title, icon, hideMobile }) => (
         <Tooltip title={title} key={title}>
           <IconButton

@@ -33,3 +33,19 @@
 .font-yu-gothic {
   font-family: yu-gothic-pr6n, sans-serif;
 }
+
+.badge-green {
+  @apply bg-custom-green rounded-full px-5 text-white;
+}
+
+.btn {
+  @apply transition duration-300 ease-out hover:cursor-pointer;
+}
+
+.btn-outline-lg {
+  @apply rounded-full border px-9 py-4 uppercase hover:translate-y-0.5;
+}
+
+.btn-circle {
+  @apply rounded-full size-10 flex items-center justify-center mx-auto my-auto bg-black group-hover:bg-custom-green-dark;
+}
