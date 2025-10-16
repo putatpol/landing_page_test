@@ -6,7 +6,7 @@ const MainSection = () => {
   return (
     <main className="mt-5 px-5 text-white md:mt-[50px] md:px-[70px]">
       <div className="bg-custom-red rounded-xl py-[50px] md:py-[86px]">
-        <div className="flex flex-wrap justify-around">
+        <div className="flex flex-wrap justify-center gap-10">
           <div className="mb-8 flex flex-col flex-wrap items-center justify-center gap-5 px-10 *:flex *:items-center *:justify-center">
             <div className="flex flex-col gap-7">
               <Image src={MainImage.ImageMainLogo} alt="main-logo" />
@@ -55,23 +55,25 @@ const MainSection = () => {
         </div>
 
         <div className="my-10 flex flex-col items-center justify-center gap-5 px-5 text-center lg:px-0 lg:text-start">
-          <div className="rounded-3xl bg-white px-[21px] py-[34px] text-center text-black lg:w-3/5">
+          <div className="rounded-3xl bg-white px-[21px] py-[34px] text-center text-black w-full lg:w-auto">
             <div className="font-yu-gothic *:block *:lg:inline">
               <b>例えば</b>
               <b>「12,000円」と「10,000円」の</b>
               <b>メガネをセットで購入する場合</b>
             </div>
             <div className="my-5 flex flex-col items-center justify-center gap-7 lg:flex-row">
-              <div className="border-custom-red relative justify-self-end border-r-0 border-b-2 pb-7 lg:border-r-2 lg:border-b-0 lg:pr-7">
+              <div className="border-custom-red relative justify-self-end border-r-0 border-b-2 lg:border-r-2 lg:border-b-0 lg:pr-7">
                 <Image src={MainImage.ImageMainExample} alt="main-example" />
-                <div className="border-b-custom-red left-1/2  lg:left-auto absolute -bottom-4 h-0 w-0 rotate-180 border-r-8 border-b-16 border-l-8 border-r-transparent border-l-transparent lg:top-1/2 lg:-right-4 lg:-translate-y-1/2 lg:rotate-90" />
-                <div className="border-b-white left-1/2 lg:left-auto absolute -bottom-3 h-0 w-0 rotate-180 border-r-8 border-b-16 border-l-8 border-r-transparent border-l-transparent lg:top-1/2 lg:-right-3 lg:-translate-y-1/2 lg:rotate-90" />
+                <div className="border-b-custom-red absolute -bottom-4 left-1/2 h-0 w-0 rotate-180 border-r-8 border-b-16 border-l-8 border-r-transparent border-l-transparent lg:top-1/2 lg:-right-4 lg:left-auto lg:-translate-y-1/2 lg:rotate-90" />
+                <div className="absolute -bottom-3 left-1/2 h-0 w-0 rotate-180 border-r-8 border-b-16 border-l-8 border-r-transparent border-b-white border-l-transparent lg:top-1/2 lg:-right-3 lg:left-auto lg:-translate-y-1/2 lg:rotate-90" />
               </div>
               <div className="justify-self-start">
-                <div className="flex flex-col xl:flex-row items-center justify-center [&_b]:text-xl [&_b]:lg:text-[22px]">
+                <div className="flex flex-col items-center justify-center xl:flex-row [&_b]:text-xl [&_b]:lg:text-[20px]">
                   <b>2本目半額で</b>
                   <div className="text-custom-red flex items-center px-1">
-                    <p className="pr-1 text-4xl lg:text-[40px] font-bold">¥5,000</p>
+                    <p className="pr-1 text-4xl font-bold lg:text-[40px]">
+                      ¥5,000
+                    </p>
                     <b className="font-yu-gothic">がお得に！</b>
                   </div>
                 </div>
