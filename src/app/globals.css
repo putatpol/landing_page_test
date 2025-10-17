@@ -1,16 +1,44 @@
 @import "tailwindcss";
 
-:root {
-  --color-yellow: #f2dc00;
-  --color-red: #b8181e;
-  --color-green-dark: #005d31;
-  --color-green: #468a59;
-  --color-green-light: #58ab6f;
-  --color-green-lighter: #7abc8c;
-  --color-brown-dark: #604c3f;
-  --color-brown: #b58741;
-  --color-brown-light: #c79f62;
-  --color-brown-lighter: #d4b688;
+@layer base {
+  :root {
+    --color-yellow: #f2dc00;
+    --color-red: #b8181e;
+    --color-green-dark: #005d31;
+    --color-green: #468a59;
+    --color-green-light: #58ab6f;
+    --color-green-lighter: #7abc8c;
+    --color-brown-dark: #604c3f;
+    --color-brown: #b58741;
+    --color-brown-light: #c79f62;
+    --color-brown-lighter: #d4b688;
+  }
+  
+  .font-mizolet {
+    font-family: mizolet, sans-serif;
+  }
+  
+  .font-yu-gothic {
+    font-family: yu-gothic-pr6n, sans-serif;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply transition duration-300 ease-out hover:cursor-pointer;
+  }
+  
+  .btn-outline-lg {
+    @apply rounded-full border px-9 py-4 uppercase hover:translate-y-0.5;
+  }
+  
+  .btn-circle {
+    @apply rounded-full size-10 flex items-center justify-center mx-auto my-auto bg-black group-hover:bg-custom-green-dark;
+  }
+
+  .badge-green {
+    @apply bg-custom-green rounded-full px-5 text-white;
+  }
 }
 
 @theme {
@@ -24,28 +52,4 @@
   --color-custom-brown: var(--color-brown);
   --color-custom-brown-light: var(--color-brown-light);
   --color-custom-brown-lighter: var(--color-brown-lighter);
-}
-
-.font-mizolet {
-  font-family: mizolet, sans-serif;
-}
-
-.font-yu-gothic {
-  font-family: yu-gothic-pr6n, sans-serif;
-}
-
-.badge-green {
-  @apply bg-custom-green rounded-full px-5 text-white;
-}
-
-.btn {
-  @apply transition duration-300 ease-out hover:cursor-pointer;
-}
-
-.btn-outline-lg {
-  @apply rounded-full border px-9 py-4 uppercase hover:translate-y-0.5;
-}
-
-.btn-circle {
-  @apply rounded-full size-10 flex items-center justify-center mx-auto my-auto bg-black group-hover:bg-custom-green-dark;
 }
