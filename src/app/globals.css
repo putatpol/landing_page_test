@@ -27,17 +27,21 @@
   .btn {
     @apply transition duration-300 ease-out hover:cursor-pointer;
   }
-  
+
   .btn-outline-lg {
-    @apply rounded-full border px-9 py-4 uppercase hover:translate-y-0.5;
-  }
-  
-  .btn-circle {
-    @apply rounded-full size-10 flex items-center justify-center mx-auto my-auto bg-black group-hover:bg-custom-green-dark;
+    @apply h-[64px] rounded-full border-2 px-10 border-b-4 uppercase hover:translate-y-0.5 hover:border-b-2;
   }
 
-  .badge-green {
-    @apply bg-custom-green rounded-full px-5 text-white;
+  .btn-circle {
+    @apply group-hover:bg-custom-green-dark mx-auto my-auto flex size-10 items-center justify-center rounded-full bg-black;
+  }
+
+  .badge-custom {
+    @apply rounded-full px-5 text-xs font-semibold md:text-white uppercase lg:text-base;
+  }
+
+  .text-circle {
+    @apply inline-flex h-[1.8em] w-[1.8em] items-center justify-center rounded-full align-middle;
   }
 }
 

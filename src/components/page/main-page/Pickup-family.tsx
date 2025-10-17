@@ -10,12 +10,12 @@ const PickupFamily = () => {
   return (
     <section
       id="pickup-family"
-      className="bg-custom-green-lighter *:md:px-[70px]  rounded-t-[70px] md:rounded-t-[150px]"
+      className="bg-custom-green-lighter rounded-t-[70px] lg:rounded-t-[150px] *:lg:px-[70px]"
     >
       {/* -- Family Image -- */}
-      <div className="grid grid-cols-1 justify-center gap-10 pt-[136px] pb-40 md:grid-cols-2 md:pt-[237px]">
+      <div className="grid grid-cols-1 justify-center gap-10 pt-[136px] pb-20 lg:grid-cols-2 lg:pt-[237px] lg:pb-40">
         <div className="relative flex justify-center">
-          <h1 className="absolute -top-18 text-8xl font-black text-white uppercase md:text-9xl">
+          <h1 className="absolute -top-18 text-[87px] font-black text-white uppercase lg:text-[146px]">
             family
           </h1>
           <Image
@@ -24,15 +24,23 @@ const PickupFamily = () => {
             className="z-10 px-5"
           />
         </div>
-        <div className="mb-8 flex flex-col flex-wrap items-center justify-center gap-5 px-10 *:flex *:items-center *:justify-center">
-          <div className="flex flex-col gap-5">
-            <div className="flex gap-1">
-              <p>小さなお子様がいる家庭でも</p>
-              <span className="bg-black text-white">安</span>
-              <span className="bg-black text-white">心</span>
+        <div className="mb-8 flex flex-col flex-wrap items-center justify-center gap-5 px-6 *:flex *:items-center *:justify-center lg:px-10">
+          <div className="font-mizolet flex flex-col items-center gap-5 lg:items-start">
+            <div className="flex flex-wrap items-center justify-center gap-1 text-xl lg:justify-start lg:text-[22px]">
+              <p className="text-center leading-8 lg:text-start">
+                小さなお子様がいる
+                <span className="block md:inline space-x-2">
+                  <span>家庭でも</span>
+                  <span className="text-circle bg-black text-white">安</span>
+                  <span className="text-circle bg-black text-white">心</span>
+                </span>
+              </p>
             </div>
-            <h4 className="bg-white p-2 text-4xl">軽くて丈夫なフレーム</h4>
-            <p>
+
+            <h4 className="bg-white p-2 text-2xl lg:text-4xl">
+              軽くて丈夫なフレーム
+            </h4>
+            <p className="px-5 text-xs/6 md:px-20 lg:px-0 lg:text-sm">
               小さな子供がいるご家庭には、軽量で丈夫な樹脂素材のフレームが最適！行楽シーズンにあわせて家族でまとめて新調してみては？傷防止やUVカットの機能が搭載されたオプションレンズもおすすめ。
             </p>
           </div>
@@ -40,8 +48,8 @@ const PickupFamily = () => {
       </div>
 
       {/* -- Product item -- */}
-      <div className="mt-0 w-full md:mb-20">
-        <div className="grid grid-cols-1 rounded-2xl bg-white *:mx-auto *:flex *:py-[35px] md:grid-cols-3">
+      <div className="mt-0 md:flex w-full justify-center px-5 md:mb-20">
+        <div className="grid grid-cols-1 gap-5 rounded-2xl bg-white *:mx-auto *:flex *:py-[35px] md:grid-cols-3 md:px-10">
           <ProductItem />
           <ProductItem />
           <ProductItem />

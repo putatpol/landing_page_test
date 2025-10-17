@@ -74,7 +74,7 @@ const MainSection = () => {
                 <div className="flex flex-col items-center justify-center xl:flex-row [&_b]:text-xl [&_b]:lg:text-[20px]">
                   <b>2本目半額で</b>
                   <div className="text-custom-red flex items-center px-1">
-                    <p className="pr-1 text-4xl font-bold lg:text-[40px]">
+                    <p className="pr-1 text-4xl font-extrabold lg:text-[40px]">
                       ¥5,000
                     </p>
                     <b className="font-yu-gothic">がお得に！</b>

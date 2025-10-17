@@ -7,7 +7,7 @@ import ImageProductToplist1 from "@images/main-page/SUN2107N-4S_C1.png";
 import ImageProductToplist2 from "@images/main-page/SUN2107N-4S_C1.png";
 import ImageProductToplist3 from "@images/main-page/SUN2107N-4S_C1.png";
 import ImageTabletLabtop from "@images/main-page/tablet-labtop.svg";
-
+import ImageDaily from "@images/main-page/daily.svg";
 
 export default {
   ImageMainPersons,
@@ -19,4 +19,5 @@ export default {
   ImageProductToplist2,
   ImageProductToplist3,
   ImageTabletLabtop,
+  ImageDaily,
 };
