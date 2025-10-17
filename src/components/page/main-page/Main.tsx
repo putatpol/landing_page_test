@@ -6,6 +6,7 @@ const MainSection = () => {
   return (
     <main className="mt-5 px-5 text-white md:mt-[50px] md:px-[70px] mb-20 md:mb-40">
       <div className="bg-custom-red rounded-xl py-[50px] md:py-[86px]">
+        {/* -- Main Banner -- */}
         <div className="flex flex-wrap justify-center gap-10">
           <div className="mb-8 flex flex-col flex-wrap items-center justify-center gap-5 px-10 *:flex *:items-center *:justify-center">
             <div className="flex flex-col gap-7">
@@ -26,6 +27,7 @@ const MainSection = () => {
           />
         </div>
 
+        {/* -- Text Logo --  */}
         <div className="my-5 flex flex-col items-center justify-center text-center md:my-10">
           <Image
             src={MainImage.ImageMainTextLogo}
@@ -54,6 +56,7 @@ const MainSection = () => {
           </div>
         </div>
 
+        {/* -- Banner Example -- */}
         <div className="my-10 flex flex-col items-center justify-center gap-5 px-5 text-center lg:px-0 lg:text-start">
           <div className="rounded-3xl bg-white px-[21px] py-[34px] text-center text-black w-full lg:w-auto">
             <div className="font-yu-gothic *:block *:lg:inline">
@@ -89,6 +92,7 @@ const MainSection = () => {
           </b>
         </div>
 
+        {/* -- Note -- */}
         <div className="my-10 items-center justify-center px-5 text-center text-black lg:px-0 lg:text-start">
           <div className="mx-auto grid grid-cols-1 rounded-3xl bg-white px-[21px] py-[34px] lg:w-3/5 lg:grid-cols-3">
             <div className="mx-auto my-auto">
