@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@layer base {
+/* @layer base {
   :root {
     --color-yellow: #f2dc00;
     --color-red: #b8181e;
@@ -21,7 +21,7 @@
   .font-yu-gothic {
     font-family: yu-gothic-pr6n, sans-serif;
   }
-}
+} */
 
 @layer components {
   .btn {
@@ -42,14 +42,17 @@
 }
 
 @theme {
-  --color-custom-yellow: var(--color-yellow);
-  --color-custom-red: var(--color-red);
-  --color-custom-green-dark: var(--color-green-dark);
-  --color-custom-green: var(--color-green);
-  --color-custom-green-light: var(--color-green-light);
-  --color-custom-green-lighter: var(--color-green-lighter);
-  --color-custom-brown-dark: var(--color-brown-dark);
-  --color-custom-brown: var(--color-brown);
-  --color-custom-brown-light: var(--color-brown-light);
-  --color-custom-brown-lighter: var(--color-brown-lighter);
+  --font-mizolet: mizolet, sans-serif;
+  --font-yu-gothic: yu-gothic-pr6n, sans-serif;
+
+  --color-custom-yellow: #f2dc00;
+  --color-custom-red: #b8181e;
+  --color-custom-green-dark: #005d31;
+  --color-custom-green: #468a59;
+  --color-custom-green-light: #58ab6f;
+  --color-custom-green-lighter: #7abc8c;
+  --color-custom-brown-dark: #604c3f;
+  --color-custom-brown: #b58741;
+  --color-custom-brown-light: #c79f62;
+  --color-custom-brown-lighter: #d4b688;
 }
