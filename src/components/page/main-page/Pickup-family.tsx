@@ -12,7 +12,7 @@ const PickupFamily = () => {
       id="pickup-family"
       className="bg-custom-green-lighter *:md:px-[70px]  rounded-t-[70px] md:rounded-t-[150px]"
     >
-      {/* == family image == */}
+      {/* -- Family Image -- */}
       <div className="grid grid-cols-1 justify-center gap-10 pt-[136px] pb-40 md:grid-cols-2 md:pt-[237px]">
         <div className="relative flex justify-center">
           <h1 className="absolute -top-18 text-8xl font-black text-white uppercase md:text-9xl">
@@ -39,7 +39,7 @@ const PickupFamily = () => {
         </div>
       </div>
 
-      {/* == product item == */}
+      {/* -- Product item -- */}
       <div className="mt-0 w-full md:mb-20">
         <div className="grid grid-cols-1 rounded-2xl bg-white *:mx-auto *:flex *:py-[35px] md:grid-cols-3">
           <ProductItem />
@@ -48,7 +48,7 @@ const PickupFamily = () => {
         </div>
       </div>
 
-      {/* == option == */}
+      {/* -- Option -- */}
       <div className="bg-custom-green-light">
         <div className="grid grid-cols-1 gap-4 px-5 py-20 lg:grid-cols-3 lg:px-0">
           <div className="mb-5 flex flex-col items-center justify-center gap-5 lg:mb-0 lg:gap-10">
@@ -88,7 +88,7 @@ const PickupFamily = () => {
         </div>
       </div>
 
-      {/* == button arrow == */}
+      {/* -- Card Button -- */}
       <CardButtonArrow />
     </section>
   );
