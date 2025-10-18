@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "collections": "John Dillinger",
+    "model": "JD1045Z-4A C2 ゴールド",
+    "price": 20000,
+    "category": "glasses",
+    "image": "/images/glasses/daily/product-daily-1.png"
+  },
+  {
+    "id": 2,
+    "collections": "ESSENTIAL",
+    "model": "FC2035V-4A C2 ブラウン",
+    "price": 8000,
+    "category": "sunglasses",
+    "image": "/images/glasses/daily/product-daily-2.png"
+  },
+  {
+    "id": 3,
+    "collections": "Graph Belle",
+    "model": "GB1043G-4A C1 マットブラウン",
+    "price": 10000,
+    "category": "kids glasses",
+    "image": "/images/glasses/daily/product-daily-3.png"
+  }
+]

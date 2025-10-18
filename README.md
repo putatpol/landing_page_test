@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
-## Getting Started
-
-First, run the development server:
+## ⚡ Installation
 
 ```bash
-npm run dev
+# Clone the repository
+git clone https://github.com/putatpol/landing_page_test.git
+cd landing_page_test
+
+# Install dependencies
+yarn install
 # or
+npm install
+
+-----------------------------------
+
+## 🚀 Usage
+
+# Start development server
 yarn dev
 # or
-pnpm dev
+npm run dev
+
+# Build for production
+yarn build
 # or
-bun dev
-```
+npm run build
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Start production server
+yarn start
+# or
+npm start
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+-----------------------------------
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🏗️ Structure
 
-## Learn More
+src/
+ ├─ app/
+ │   ├─ globals.css
+ │   ├─ layout.tsx
+ │   └─ page.tsx.tsx
+ ├─ components/
+ │   ├─ layout/
+ │   ├─ page/
+ │   │   ├─ main-page/
+ │   │   └─ other-page
+ │   └─ ui/
+ │       ├─ button/
+ │       ├─ product/
+ │       └─ other/
+ ├─ interfaces/
+ ├─ mocks/
+ ├─ services/
+ ├─ styles/
+ │   └─ fonts/
 
-To learn more about Next.js, take a look at the following resources:
+-----------------------------------
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠 Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Frontend / Frameworks:**
+- **Next.js 15** – React framework for SSR / SSG / App Router  
+- **React 19** – UI library  
+- **TypeScript 5** – Type safety  
 
-## Deploy on Vercel
+**UI / Styling:**
+- **Tailwind CSS 4** – Utility-first CSS framework  
+- **@mui/material 7** – Material UI components  
+- **@emotion/react & @emotion/styled** – CSS-in-JS styling  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**State / Data Fetching:**
+- **Axios 1.12** – HTTP client for API requests  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Slider / Carousel:**
+- **keen-slider 6.8** – Touch-friendly slider  
+
+**Linting / Formatting:**
+- **ESLint 9 + eslint-config-next** – Linting  
+- **Prettier 3 + prettier-plugin-tailwindcss** – Code formatting  
+
+**Dev Tools:**
+- **@types/node, @types/react, @types/react-dom** – TypeScript types  
+- **PostCSS 4** – For Tailwind processing  

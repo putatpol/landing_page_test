@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "collections": "千一作",
+    "model": "SENICHI12 C2 ハバナ",
+    "price": 20000,
+    "category": "glasses",
+    "image": "/images/glasses/20k/product-20k-1.png"
+  },
+  {
+    "id": 2,
+    "collections": "marcus raw",
+    "model": "MR1007Y-0S C1 ブラック",
+    "price": 20000,
+    "category": "glasses",
+    "image": "/images/glasses/20k/product-20k-2.png"
+  },
+  {
+    "id": 3,
+    "collections": "千一作",
+    "model": "SENICHI30 C1 ブラック",
+    "price": 22000,
+    "category": "glasses",
+    "image": "/images/glasses/20k/product-20k-3.png"
+  },
+  {
+    "id": 4,
+    "collections": "OWNDAYS × HUAWEI Eyewear 2",
+    "model": "HW2006-3A C1 ブラック",
+    "price": 37800,
+    "category": "glasses",
+    "image": "/images/glasses/20k/product-20k-4.png"
+  }
+]

@@ -1,35 +1,67 @@
 @import "tailwindcss";
 
-:root {
-  --color-yellow: #f2dc00;
-  --color-red: #b8181e;
-  --color-green-dark: #005d31;
-  --color-green: #468a59;
-  --color-green-light: #58ab6f;
-  --color-green-lighter: #7abc8c;
-  --color-brown-dark: #604c3f;
-  --color-brown: #b58741;
-  --color-brown-light: #c79f62;
-  --color-brown-lighter: #d4b688;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+
+  /* -- button -- */
+  .btn {
+    @apply transition duration-300 ease-out hover:cursor-pointer;
+  }
+
+  .btn-outline-lg {
+    @apply h-[64px] rounded-full border-2 px-10 border-b-4 uppercase hover:translate-y-0.5 hover:border-b-2;
+  }
+
+  .btn-circle {
+    @apply group-hover:bg-custom-green-dark flex size-10 items-center justify-center rounded-full bg-black;
+  }
+
+  .btn-card {
+    @apply rounded-xl border-2 border-b-0 bg-white shadow-[0_4px_0_0_#000] hover:translate-y-0.5 hover:shadow-[0_2px_0_0_#000];
+  }
+
+  .btn-prev_next {
+    @apply absolute top-1/2 z-10 -translate-y-1/2 transform rounded-full border-2 bg-white p-2
+  }
+
+  /* -- badge -- */
+  .badge-custom {
+    @apply rounded-full px-5 text-xs font-semibold md:text-white uppercase lg:text-base;
+  }
+
+  /* -- text -- */
+  .text-circle {
+    @apply inline-flex h-[1.8em] w-[1.8em] items-center justify-center rounded-full align-middle;
+  }
+
+  .heading-red {
+    @apply text-custom-red col-span-full text-[40px] font-bold uppercase lg:text-[65px];
+    text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+  }
+
+  .price-yellow {
+    @apply text-custom-yellow text-[22px] md:text-[32px];
+    text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+  }
 }
 
 @theme {
-  --color-custom-yellow: var(--color-yellow);
-  --color-custom-red: var(--color-red);
-  --color-custom-green-dark: var(--color-green-dark);
-  --color-custom-green: var(--color-green);
-  --color-custom-green-light: var(--color-green-light);
-  --color-custom-green-lighter: var(--color-green-lighter);
-  --color-custom-brown-dark: var(--color-brown-dark);
-  --color-custom-brown: var(--color-brown);
-  --color-custom-brown-light: var(--color-brown-light);
-  --color-custom-brown-lighter: var(--color-brown-lighter);
-}
+  --font-mizolet: mizolet, sans-serif;
+  --font-yu-gothic: yu-gothic-pr6n, sans-serif;
 
-.font-mizolet {
-  font-family: mizolet, sans-serif;
-}
-
-.font-yu-gothic {
-  font-family: yu-gothic-pr6n, sans-serif;
+  --color-custom-yellow: #f2dc00;
+  --color-custom-red: #b8181e;
+  --color-custom-green-dark: #005d31;
+  --color-custom-green: #468a59;
+  --color-custom-green-light: #58ab6f;
+  --color-custom-green-lighter: #7abc8c;
+  --color-custom-brown-dark: #604c3f;
+  --color-custom-brown: #b58741;
+  --color-custom-brown-light: #c79f62;
+  --color-custom-brown-lighter: #d4b688;
 }

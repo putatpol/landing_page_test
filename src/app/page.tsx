@@ -1,12 +1,23 @@
-import { outfitFont, notoSansJpFont, adobeFonts } from "../styles/fonts";
+import Lineup from "@/components/page/main-page/Lineup";
+import MainSection from "@/components/page/main-page/Main";
+import Option from "@/components/page/main-page/Option";
+import Pickup from "@/components/page/main-page/Pickup";
+import PickupDaily from "@/components/page/main-page/Pickup-daily";
+import PickupFamily from "@/components/page/main-page/Pickup-family";
 
 export default function Home() {
   return (
     <>
-      <h1 className={`${outfitFont.className} text-custom-yellow`}>outfit</h1>
-      <h2 className={`${notoSansJpFont.className} text-custom-red`}>すべての</h2>
-      <h1 className={`${adobeFonts.mizolet} text-custom-green-dark`}>Hello Mizolet!</h1>
-      <p className={adobeFonts.yuGothic}>これは Yu Gothic フォントです</p>
+      <MainSection />
+      <Pickup />
+      <section id="purpost">
+        <PickupFamily />
+        <PickupDaily />
+      </section>
+      <section id="budget">
+        <Lineup />
+      </section>
+      <Option />
     </>
   );
 }

@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "collections": "AIR",
+    "model": "AF2007A-3S C1 ブラック",
+    "price": 11000,
+    "category": "glasses",
+    "image": "/images/glasses/10k/product-10k-1.png"
+  },
+  {
+    "id": 2,
+    "collections": "Graph Belle",
+    "model": "GB1039B-3A C3 ゴールド",
+    "price": 10000,
+    "category": "glasses",
+    "image": "/images/glasses/10k/product-10k-2.png"
+  },
+  {
+    "id": 3,
+    "collections": "AIR",
+    "model": "AU2091T-1A C2 ブラウンデミ",
+    "price": 12000,
+    "category": "glasses",
+    "image": "/images/glasses/10k/product-10k-3.png"
+  },
+  {
+    "id": 4,
+    "collections": "SUN",
+    "model": "OB2005N-4A C1 ブラック",
+    "price": 13000,
+    "category": "sunglasses",
+    "image": "/images/glasses/10k/product-10k-4.png"
+  }
+]

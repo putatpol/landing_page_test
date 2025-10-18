@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "collections": "ESSENTIAL",
+    "model": "FC2024T-1S C2 ブラウンデミ",
+    "price": 8000,
+    "category": "glasses",
+    "image": "/images/glasses/8k/product-8k-1.png"
+  },
+  {
+    "id": 2,
+    "collections": "SUN",
+    "model": "SUN2093T-2S C1 ブラウンデミ",
+    "price": 6000,
+    "category": "sunglasses",
+    "image": "/images/glasses/8k/product-8k-2.png"
+  },
+  {
+    "id": 3,
+    "collections": "Junni",
+    "model": "JU2038N-4S C3 クリアブルー",
+    "price": 7000,
+    "category": "glasses",
+    "image": "/images/glasses/8k/product-8k-3.png"
+  },
+  {
+    "id": 4,
+    "collections": "ESSENTIAL",
+    "model": "FC2036V-4A C1 ブラウン",
+    "price": 8000,
+    "category": "glasses",
+    "image": "/images/glasses/8k/product-8k-4.png"
+  }
+]

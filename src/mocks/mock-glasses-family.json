@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "collections": "AIR",
+    "model": "AU2101E-3A C3 カーキ",
+    "price": 11000,
+    "category": "glasses",
+    "image": "/images/glasses/family/product-family-1.png"
+  },
+  {
+    "id": 2,
+    "collections": "SUN",
+    "model": "SUN2107N-4S C1 ブラック",
+    "price": 8000,
+    "category": "sunglasses",
+    "image": "/images/glasses/family/product-family-2.png"
+  },
+  {
+    "id": 3,
+    "collections": "Junni",
+    "model": "JU2037N-4S C3 クリアブルー",
+    "price": 7000,
+    "category": "kids glasses",
+    "image": "/images/glasses/family/product-family-3.png"
+  }
+]
