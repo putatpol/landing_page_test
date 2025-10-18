@@ -5,6 +5,7 @@ import IconCart from "@icons/icon-cart.svg";
 import IconPhone from "@icons/icon-phone.svg";
 import IconMenu from "@icons/icon-menu.svg";
 import IconArrowWhite from "@icons/icon-arrow-white.svg"
+import IconArrow from "@icons/icon-arrow.svg"
 
 export default {
   IconSearch,
@@ -14,4 +15,5 @@ export default {
   IconPhone,
   IconMenu,
   IconArrowWhite,
+  IconArrow,
 };

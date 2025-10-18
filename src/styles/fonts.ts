@@ -1,5 +1,5 @@
 import { Outfit, Noto_Sans_JP } from "next/font/google";
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
 
 // Google Fonts
 export const outfitFont = Outfit({

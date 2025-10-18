@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import Nevbar from "@/components/layout/Navbar";
 import { outfitFont } from "@styles/fonts";
+import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: "OTDM– Landing Page Test",
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={`${outfitFont.className}`}>
         <Nevbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -1,19 +1,18 @@
 import React from "react";
 import MainImage from "@images/main-page";
 import Image from "next/image";
-import ProductItem from "@/components/ui/ProductItem";
-import CardButtonArrow from "@/components/ui/cards/CardButtonArrow";
 import ButtonArrowLarge from "@/components/ui/buttons/ButtonArrowLarge";
-import TextBox from "@/components/ui/TextBox";
+import TextBox from "@/components/ui/other/TextBox";
+import ProductDaily from "./product-lineup/ProductDaily";
 
 const PickupDaily = () => {
   return (
     <section id="pickup-daily" className="bg-custom-green-lighter">
       <div className="bg-custom-brown-lighter rounded-t-[70px] lg:rounded-t-[150px] *:lg:px-[70px]">
-        {/* -- Family Image -- */}
-        <div className="grid grid-cols-1 justify-center gap-10 pt-[136px] pb-20 lg:grid-cols-2 lg:pt-[237px] lg:pb-40">
+        {/* -- Daily Image -- */}
+        <div className="mx-auto grid max-w-[1150px] grid-cols-1 justify-center gap-6 pt-[136px] pb-10 lg:grid-cols-2 lg:pt-[237px] lg:pb-20">
           <div className="relative flex justify-center">
-            <h1 className="absolute -top-18 text-[87px] font-black text-white uppercase lg:text-[146px]">
+            <h1 className="absolute -top-20 text-[87px] font-black text-white uppercase lg:text-[146px] xl:-top-24">
               daily
             </h1>
             <Image
@@ -22,7 +21,7 @@ const PickupDaily = () => {
               className="z-10 px-5"
             />
           </div>
-          <div className="mb-8 flex flex-col flex-wrap items-center justify-center gap-5 px-6 *:flex *:items-center *:justify-center lg:px-10">
+          <div className="flex flex-col flex-wrap items-center justify-center gap-5 px-6 *:flex *:items-center *:justify-center lg:px-10">
             <div className="font-mizolet flex flex-col items-center gap-5 lg:items-start">
               <div className="flex flex-wrap items-center justify-center gap-1 text-xl lg:justify-start lg:text-[22px]">
                 <p className="space-x-2 text-center leading-8 lg:text-start">
@@ -33,10 +32,10 @@ const PickupDaily = () => {
                 </p>
               </div>
 
-              <h4 className="bg-white p-2 text-2xl lg:text-4xl">
+              <h4 className="bg-white p-2 text-[23px] lg:text-4xl">
                 肌馴染みのいいフレーム
               </h4>
-              <p className="px-5 text-xs/6 md:px-20 lg:px-0 lg:text-sm">
+              <p className="px-5 text-xs leading-7 md:px-20 lg:px-0 lg:text-sm">
                 手元作業の多いオフィスワーク、スポーツ、ドライブなど、日常のシーンごとに複数のメガネを持っておくのもおすすめ。使用場面に適したメガネなら、目の負担を軽減し、より快適な視界を保つことができます。さらに、ファッションに合わせておしゃれを楽しんだり、仕事とプライベートの気持ちの切り替えをスムーズにする手助けに！
               </p>
             </div>
@@ -46,15 +45,13 @@ const PickupDaily = () => {
         {/* -- Product item -- */}
         <div className="mt-0 w-full justify-center px-5 md:mb-20 md:flex">
           <div className="grid grid-cols-1 gap-5 rounded-2xl bg-white *:mx-auto *:flex *:py-[35px] md:grid-cols-3 md:px-10">
-            <ProductItem />
-            <ProductItem />
-            <ProductItem />
+            <ProductDaily />
           </div>
         </div>
 
         {/* -- Option -- */}
         <div className="bg-custom-brown-light">
-          <div className="grid grid-cols-1 gap-4 px-5 py-20 lg:grid-cols-3 lg:px-0">
+          <div className="mx-auto grid max-w-[1440px] grid-cols-1 gap-4 px-5 py-20 lg:grid-cols-3 lg:px-0">
             <div className="mb-5 flex flex-col items-center justify-center gap-5 lg:mb-0 lg:gap-10">
               <div className="flex">
                 <div className="relative">

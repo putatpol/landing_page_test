@@ -11,12 +11,12 @@ const ButtonArrowLarge = ({ children }: { children: React.ReactNode }) => {
     <button
       type="button"
       onClick={handleClick}
-      className="btn group grid grid-cols-4 rounded-xl border-2 border-b-4 px-2 hover:border-b-2 bg-white hover:translate-y-0.5"
+      className="btn group btn-card grid grid-cols-4 px-2"
     >
-      <div className="col-span-3 py-5 my-4 flex flex-col justify-center gap-3 border-r px-3 md:px-6 text-start">
+      <div className="col-span-3 my-4 flex flex-col justify-center gap-3 border-r-2 px-3 py-5 text-start md:px-6">
         {children}
       </div>
-      <div className="btn-circle">
+      <div className="btn-circle mx-auto my-auto">
         <Image src={Icon.IconArrowWhite} alt="icon-arrow-white" />
       </div>
     </button>

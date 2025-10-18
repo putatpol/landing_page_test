@@ -1,29 +1,14 @@
 @import "tailwindcss";
 
-/* @layer base {
-  :root {
-    --color-yellow: #f2dc00;
-    --color-red: #b8181e;
-    --color-green-dark: #005d31;
-    --color-green: #468a59;
-    --color-green-light: #58ab6f;
-    --color-green-lighter: #7abc8c;
-    --color-brown-dark: #604c3f;
-    --color-brown: #b58741;
-    --color-brown-light: #c79f62;
-    --color-brown-lighter: #d4b688;
+@layer base {
+  html {
+    scroll-behavior: smooth;
   }
-  
-  .font-mizolet {
-    font-family: mizolet, sans-serif;
-  }
-  
-  .font-yu-gothic {
-    font-family: yu-gothic-pr6n, sans-serif;
-  }
-} */
+}
 
 @layer components {
+
+  /* -- button -- */
   .btn {
     @apply transition duration-300 ease-out hover:cursor-pointer;
   }
@@ -33,15 +18,35 @@
   }
 
   .btn-circle {
-    @apply group-hover:bg-custom-green-dark mx-auto my-auto flex size-10 items-center justify-center rounded-full bg-black;
+    @apply group-hover:bg-custom-green-dark flex size-10 items-center justify-center rounded-full bg-black;
   }
 
+  .btn-card {
+    @apply rounded-xl border-2 border-b-0 bg-white shadow-[0_4px_0_0_#000] hover:translate-y-0.5 hover:shadow-[0_2px_0_0_#000];
+  }
+
+  .btn-prev_next {
+    @apply absolute top-1/2 z-10 -translate-y-1/2 transform rounded-full border-2 bg-white p-2
+  }
+
+  /* -- badge -- */
   .badge-custom {
     @apply rounded-full px-5 text-xs font-semibold md:text-white uppercase lg:text-base;
   }
 
+  /* -- text -- */
   .text-circle {
     @apply inline-flex h-[1.8em] w-[1.8em] items-center justify-center rounded-full align-middle;
+  }
+
+  .heading-red {
+    @apply text-custom-red col-span-full text-[40px] font-bold uppercase lg:text-[65px];
+    text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+  }
+
+  .price-yellow {
+    @apply text-custom-yellow text-[22px] md:text-[32px];
+    text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
   }
 }
 

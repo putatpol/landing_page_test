@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 import MainImage from "@images/main-page";
 import Icon from "@icons/index";
-import TextBox from "../TextBox";
+import TextBox from "../other/TextBox";
 
-const CardButtonArrow = () => {
+const ButtonCardBanner = () => {
   return (
     <div className="flex justify-center px-5 py-20 lg:px-0">
       <div className="btn group relative flex flex-col gap-4 rounded-3xl bg-white px-8 py-10 uppercase hover:translate-y-0.5 lg:flex-row lg:px-15 xl:gap-7">
@@ -20,7 +20,7 @@ const CardButtonArrow = () => {
           </p>
           <p className="text-xl lg:text-3xl">親子で楽らくリンク機能</p>
         </div>
-        <div className="btn-circle absolute right-2 bottom-2 rotate-45 lg:static lg:rotate-0">
+        <div className="btn-circle mx-auto my-auto absolute right-2 bottom-2 rotate-45 lg:static lg:rotate-0">
           <Image src={Icon.IconArrowWhite} alt="icon-arrow-white" />
         </div>
       </div>
@@ -28,4 +28,4 @@ const CardButtonArrow = () => {
   );
 };
 
-export default CardButtonArrow;
+export default ButtonCardBanner;
